@@ -4,7 +4,7 @@
   "description": "Library to reduce common tasks for React apps based on re-ducks.",
   "main": "lib/index.js",
   "repository": "git@github.com:rmariuzzo/re-ducks.git",
-  "author": "Rubens Mariuzzo <rubens@mariuzzo.com>",
+  "author": "Rubens Mariuzzo <rubens@mariuzzo.com> (https://github.com/rmariuzzo)",
   "license": "MIT",
   "scripts": {
     "test": "jest",
