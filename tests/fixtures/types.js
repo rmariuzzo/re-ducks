@@ -1,4 +1,4 @@
-const types = require('../../lib').types
+import { types } from '../../lib'
 
 module.exports = types('app/test', [
   'create',

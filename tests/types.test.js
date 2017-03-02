@@ -1,5 +1,4 @@
-const types = require('../lib').types
-const fixtures = require('./fixtures/types')
+import { types } from '../lib'
 
 test('create types without options', () => {
   expect(types(['a', 'b', 'c']))

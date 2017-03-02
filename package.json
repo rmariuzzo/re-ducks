@@ -1,17 +1,23 @@
 {
   "name": "re-ducks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library to reduce common tasks for React apps based on re-ducks.",
-  "main": "lib/index.js",
+  "main": "dist/re-ducks.js",
   "repository": "git@github.com:rmariuzzo/re-ducks.git",
   "author": "Rubens Mariuzzo <rubens@mariuzzo.com> (https://github.com/rmariuzzo)",
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "node ./build.js"
   },
   "devDependencies": {
-    "jest": "^19.0.2"
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "jest": "^19.0.2",
+    "rollup": "^0.41.4",
+    "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {}
 }

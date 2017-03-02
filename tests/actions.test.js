@@ -1,5 +1,5 @@
-const actions = require('../lib').actions
-const types = require('./fixtures/types')
+import { actions } from '../lib'
+import types from './fixtures/types'
 
 test('create actions without types using a name', () => {
   const generated = actions([
