@@ -9,15 +9,17 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "build": "node ./build.js"
+    "build:dev": "webpack ./lib ./dist/re-ducks.js -d",
+    "build:prod": "webpack ./lib ./dist/re-ducks.min.js -p"
   },
   "devDependencies": {
     "babel-jest": "^19.0.0",
+    "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
-    "jest": "^19.0.2",
-    "rollup": "^0.41.4",
-    "rollup-plugin-node-resolve": "^2.0.0"
+    "jest": "^19.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "webpack": "^2.2.1"
+  }
 }
