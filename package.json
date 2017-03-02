@@ -1,6 +1,6 @@
 {
   "name": "re-ducks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library to reduce common tasks for React apps based on re-ducks.",
   "main": "dist/re-ducks.js",
   "repository": "git@github.com:rmariuzzo/re-ducks.git",
