@@ -40,6 +40,7 @@ test('create actions with types using a name and payload identifier', () => {
     ['create', 'user'],
     ['update', 'another-user'],
     ['delete', 123],
+    ['search', 'error.message']
   ])
   expect(generated.create).toBeDefined()
   expect(generated.update).toBeDefined()
@@ -50,6 +51,8 @@ test('create actions with types using a name and payload identifier', () => {
     .toEqual({ type: 'app/test/update', payload: { 'another-user': 'Rubens' } })
   expect(generated.delete('Rubens'))
     .toEqual({ type: 'app/test/delete', payload: { '123': 'Rubens' } })
+  expect(generated.search('Boom'))
+    .toEqual({ type: 'search', payload: { 'error': { 'message': 'Boom' } } })
 })
 
 test('create actions with types using a name and payload identifier', () => {
